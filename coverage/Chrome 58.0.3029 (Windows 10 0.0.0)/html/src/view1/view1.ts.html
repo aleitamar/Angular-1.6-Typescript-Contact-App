@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\view1\view1.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/view1/</a> view1.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">48.15% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>13/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">48% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">///&lt;reference path="../../node_modules/@types/angular/index.d.ts" /&gt;
+///&lt;reference path="../../node_modules/@types/angular-route/index.d.ts" /&gt;
+'use strict';
+import * as angular from "angular";
+import { IContactRecord } from "../shared/interfaces";
+import * as DataMgr from "../shared/myapp.service";
+&nbsp;
+module ContactsHomePageModule {
+&nbsp;
+  export interface IContactFieldsScope extends ng.IScope, IContactRecord {
+    PageTitle: string;
+    AddRecordText: string;
+    ContactRecords: IContactRecord[];
+  }
+&nbsp;
+  export class View1Controller {
+    private <span class="cstat-no" title="statement not covered" >data: IContactRecord[] = [{</span>
+      id:1,
+      FirstName: 'fasd',
+      LastName: 'dasd',
+      Phone: 2222,
+      Email: 'sd'
+    }, {
+      id:2,
+      FirstName: 'wwewewe',
+      LastName: 'dasrrrrd',
+      Phone: 6666,
+      Email: '@dfdfgdfg'
+    }];
+&nbsp;
+    static $inject = ["$scope", "$location", "DataMgr"];
+&nbsp;
+<span class="fstat-no" title="function not covered" >    constructor(protected <span class="cstat-no" title="statement not covered" >$scope: ContactsHomePageModule.IContactFieldsScope,</span></span>
+      private <span class="cstat-no" title="statement not covered" >$location: ng.ILocationService,</span>
+      private <span class="cstat-no" title="statement not covered" >dataMgr: DataMgr.myService.DataMgr)</span> {
+<span class="cstat-no" title="statement not covered" >      $scope.PageTitle = "Contact Home Page";</span>
+<span class="cstat-no" title="statement not covered" >      $scope.AddRecordText = "New Contact"</span>
+<span class="cstat-no" title="statement not covered" >      $scope.ContactRecords = this.data</span>
+<span class="cstat-no" title="statement not covered" >      this.loadData();</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    loadData(){</span>
+<span class="cstat-no" title="statement not covered" >      this.dataMgr.getData('shared/data.json')</span>
+      .then(<span class="fstat-no" title="function not covered" >(res:any)</span>=&gt;{
+<span class="cstat-no" title="statement not covered" >        this.$scope.ContactRecords=res;</span>
+      })
+      .catch(<span class="fstat-no" title="function not covered" >(e:any)</span>=&gt;{
+<span class="cstat-no" title="statement not covered" >        console.log(e);</span>
+      })
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    onEdit(id:number)</span>{
+<span class="cstat-no" title="statement not covered" >      this.$location.path('/view2/'+id)</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    onDelete(id:number)</span>{
+<span class="cstat-no" title="statement not covered" >      this.dataMgr.deleteData(id);</span>
+    }
+<span class="fstat-no" title="function not covered" >    onAddNewContact() {</span>
+<span class="cstat-no" title="statement not covered" >      this.$location.path("/view2");</span>
+    }
+  }
+}
+&nbsp;
+angular.module('myApp.view1', ['ngRoute'])
+&nbsp;
+  .config(['$routeProvider', function ($routeProvider: any) {
+    $routeProvider.when('/view1', {
+      templateUrl: 'view1/view1.html',
+      controller: 'View1Ctrl',
+      controllerAs: 'ctrl'
+    })
+    .when('/view2/:id',{
+      templateUrl: 'view2/view2.html',
+      controller: 'View2Ctrl',
+      controllerAs: 'ctrl'
+    });
+  }])
+&nbsp;
+  .controller('View1Ctrl', ContactsHomePageModule.View1Controller);</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun May 21 2017 12:20:24 GMT+0300 (Jerusalem Daylight Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs",
+        "sourceMap": true,
+        "types": [
+            "angular",
+            "angular-mocks",
+            "jasmine"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+    //    "files": [
+    //        "src/app.ts"
+    //    ],
+    //    "compilerOptions": {
+    //        "noImplicitAny": true,
+    //        //"experimentalDecorators": true,
+    //        "target": "es2015"
+    //    }
+}

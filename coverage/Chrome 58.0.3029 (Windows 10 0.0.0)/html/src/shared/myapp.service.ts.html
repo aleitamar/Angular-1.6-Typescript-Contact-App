@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\shared\myapp.service.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/shared/</a> myapp.service.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">36.11% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>13/36</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">28.57% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">37.5% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/32</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+'use strict'
+import * as angular from "angular";
+import { IContactRecord } from './interfaces';
+&nbsp;
+export module myService {
+&nbsp;
+    export class DataMgr {
+        private qService: ng.IQService;
+        private httpService: ng.IHttpService;
+        private <span class="cstat-no" title="statement not covered" >_contactData: Array&lt;IContactRecord&gt;=[];</span>
+&nbsp;
+        static $inject = ['$http',"$q"];
+&nbsp;
+<span class="fstat-no" title="function not covered" >        constructor(private <span class="cstat-no" title="statement not covered" >$http: ng.IHttpService,</span> private <span class="cstat-no" title="statement not covered" >$q: ng.IQService)</span></span> {
+<span class="cstat-no" title="statement not covered" >            this.httpService = $http;</span>
+<span class="cstat-no" title="statement not covered" >            this.qService = $q;</span>
+        }
+&nbsp;
+<span class="fstat-no" title="function not covered" >        get ContactData(): Array&lt;IContactRecord&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            return this._contactData;</span>
+        }
+<span class="fstat-no" title="function not covered" >        set ContactData(val: Array&lt;IContactRecord&gt;)</span> {
+<span class="cstat-no" title="statement not covered" >            this._contactData = val;</span>
+        }f
+&nbsp;
+<span class="fstat-no" title="function not covered" >        updateData(recordIndex:number, updateRecord:IContactRecord)</span>{
+<span class="cstat-no" title="statement not covered" >            this.ContactData[recordIndex] = updateRecord;</span>
+        }
+<span class="fstat-no" title="function not covered" >        deleteData(id:number)</span>{
+<span class="cstat-no" title="statement not covered" >            this.ContactData.forEach(<span class="fstat-no" title="function not covered" >(v:IContactRecord,i:number,arr:IContactRecord[])</span>=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >                if(v.id === id) <span class="cstat-no" title="statement not covered" >this.ContactData.splice( i, 1 );</span></span>
+<span class="cstat-no" title="statement not covered" >                return;</span>
+            })
+        }
+&nbsp;
+<span class="fstat-no" title="function not covered" >        getData(url:string)</span>: ng.IPromise&lt;Object[]&gt; {
+<span class="cstat-no" title="statement not covered" >            var deferred = this.qService.defer();</span>
+<span class="cstat-no" title="statement not covered" >            if(this.ContactData.length===0){</span>
+<span class="cstat-no" title="statement not covered" >            this.httpService.get(url).then(<span class="fstat-no" title="function not covered" >(result: any)</span>: void =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                if (result.status === 200) {</span>
+<span class="cstat-no" title="statement not covered" >                    this.ContactData = result.data;</span>
+<span class="cstat-no" title="statement not covered" >                    deferred.resolve(result.data);</span>
+                } else {
+<span class="cstat-no" title="statement not covered" >                    deferred.reject(result);</span>
+                }
+            }, <span class="fstat-no" title="function not covered" >error </span>=&gt; {
+<span class="cstat-no" title="statement not covered" >                deferred.reject(error);</span>
+            });
+            }else{
+<span class="cstat-no" title="statement not covered" >                deferred.resolve(this.ContactData);</span>
+            }
+<span class="cstat-no" title="statement not covered" >            return deferred.promise;</span>
+        }
+&nbsp;
+<span class="fstat-no" title="function not covered" >        postData(param:any)</span> {
+<span class="cstat-no" title="statement not covered" >            this.ContactData.push(param);</span>
+        }
+    }
+}
+&nbsp;
+angular.module('myApp.shared', [])
+    .service('DataMgr', myService.DataMgr)</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun May 21 2017 12:20:24 GMT+0300 (Jerusalem Daylight Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
